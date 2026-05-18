@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARBARCC | Belajar Bareng Cece</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'] // Font baru buat judul biar lebih berkarakter
+                    },
+                    colors: {
+                        barbarRed: '#ef4444',
+                        barbarYellow: '#facc15',
+                        barbarGreen: '#22c55e',
+                        barbarBlue: '#3b82f6',
+                        darkBg: '#0f172a'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans selection:bg-barbarBlue selection:text-white">
+
+    <nav class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100 transition-all">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="index.html" class="flex items-center gap-2 group cursor-pointer">
+                    <div class="flex gap-1 group-hover:scale-110 transition-transform">
+                        <span class="w-3 h-3 rounded-full bg-barbarRed"></span>
+                        <span class="w-3 h-3 rounded-full bg-barbarYellow"></span>
+                        <span class="w-3 h-3 rounded-full bg-barbarGreen"></span>
+                        <span class="w-3 h-3 rounded-full bg-barbarBlue"></span>
+                    </div>
+                    <span class="text-2xl font-heading font-black tracking-tighter ml-2">BARBAR<span class="text-barbarBlue">CC</span></span>
+                </a>
+                <div class="hidden md:flex space-x-8 font-bold text-gray-500 text-sm tracking-wide uppercase">
+                    <a href="index.html" class="text-barbarBlue border-b-2 border-barbarBlue pb-1">Beranda</a>
+                    <a href="modul.html" class="hover:text-gray-900 hover:border-b-2 hover:border-gray-200 pb-1 transition-all">Modul Kelas</a>
+                    <a href="showcase.html" class="hover:text-gray-900 hover:border-b-2 hover:border-gray-200 pb-1 transition-all">Showcase</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-24 pb-32 bg-white overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-64 bg-barbarBlue/10 blur-3xl rounded-full -z-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="inline-block mb-6 px-4 py-2 bg-gray-100 rounded-full text-sm font-semibold text-gray-600 border border-gray-200">
+                🚀 Komunitas Koding Mahasiswa
+            </div>
+            
+            <h1 class="font-heading text-6xl md:text-8xl font-black tracking-tighter mb-6 leading-tight">
+                Belajar Bareng <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-barbarBlue to-barbarGreen">Cece</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-500 max-w-2xl mx-auto font-medium leading-relaxed">
+                "Bantai Error Bareng Cece." Wadah buat lu yang mau gerak dari nol sampai jago ngoding dengan ekosistem yang asik dan terstruktur.
+            </p>
+            <div class="mt-12 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="modul.html" class="bg-darkBg text-white px-10 py-4 rounded-2xl font-bold text-lg hover:scale-105 hover:bg-black transition-all shadow-xl">
+                    Mulai Belajar Sekarang 🚀
+                </a>
+                <a href="#about" class="bg-white text-gray-900 px-10 py-4 rounded-2xl font-bold text-lg border-2 border-gray-200 hover:border-gray-900 transition-all">
+                    Kenalan Dulu
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-darkBg text-white border-y border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-gray-700">
+                <div class="py-4">
+                    <h3 class="font-heading text-4xl font-black text-barbarYellow mb-2">25K+</h3>
+                    <p class="text-gray-400 font-medium tracking-wide">Pengikut di TikTok</p>
+                </div>
+                <div class="py-4">
+                    <h3 class="font-heading text-4xl font-black text-barbarGreen mb-2">99%</h3>
+                    <p class="text-gray-400 font-medium tracking-wide">Praktik Langsung</p>
+                </div>
+                <div class="py-4">
+                    <h3 class="font-heading text-4xl font-black text-barbarBlue mb-2">Solid</h3>
+                    <p class="text-gray-400 font-medium tracking-wide">Relasi & Komunitas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-gray-50 border-b border-gray-100">
+        <div class="max-w-5xl mx-auto px-6">    
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-heading text-4xl md:text-5xl font-black mb-6 text-gray-900 leading-tight">
+                        Apa itu <span class="text-barbarBlue">BARBARCC?</span>
+                    </h2>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        Berawal dari pengalaman mendalami Rekayasa Perangkat Lunak, gwe sadar kalau belajar ngoding sendirian itu berat. BARBARCC hadir bukan sekadar jadi tempat baca materi, tapi jadi tongkrongan buat bantai error bareng-bareng.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Di sini, kita ngebangun mentalitas <i>problem solver</i>. Dari yang cuma bisa buka VS Code, sampai bisa punya website portofolio yang mengudara di internet.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-barbarBlue to-barbarGreen transform rotate-3 rounded-3xl opacity-20 blur-lg"></div>
+                    <div class="bg-white p-4 rounded-3xl shadow-xl relative transform transition-transform hover:-translate-y-2 duration-500">
+                        <img src="assets/BARBARCC.png" alt="Koding Bersama" class="rounded-2xl w-full object-cover h-80">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="font-heading text-4xl font-black mb-4">Senjata <span class="text-barbarRed">Tempur</span> Kita</h2>
+            <p class="text-gray-500 text-lg mb-16">Teknologi standar industri yang bakal lu kuasai di kelas ini.</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="p-8 border border-gray-100 rounded-3xl bg-gray-50 hover:bg-white hover:shadow-xl transition-all group">
+                    <h3 class="font-heading text-2xl font-bold text-gray-800 group-hover:text-barbarRed transition-colors">HTML5</h3>
+                    <p class="text-gray-500 text-sm mt-2">Tulang dan kerangka utama website.</p>
+                </div>
+                <div class="p-8 border border-gray-100 rounded-3xl bg-gray-50 hover:bg-white hover:shadow-xl transition-all group">
+                    <h3 class="font-heading text-2xl font-bold text-gray-800 group-hover:text-barbarBlue transition-colors">CSS3</h3>
+                    <p class="text-gray-500 text-sm mt-2">Makeover visual, tata letak & warna.</p>
+                </div>
+                <div class="p-8 border border-gray-100 rounded-3xl bg-gray-50 hover:bg-white hover:shadow-xl transition-all group">
+                    <h3 class="font-heading text-2xl font-bold text-gray-800 group-hover:text-barbarYellow transition-colors">JavaScript</h3>
+                    <p class="text-gray-500 text-sm mt-2">Logika interaktif dan otak dari web.</p>
+                </div>
+                <div class="p-8 border border-gray-100 rounded-3xl bg-gray-50 hover:bg-white hover:shadow-xl transition-all group">
+                    <h3 class="font-heading text-2xl font-bold text-gray-800 group-hover:text-gray-900 transition-colors">Git & Vercel</h3>
+                    <p class="text-gray-500 text-sm mt-2">Deploy kodingan lu ke seluruh dunia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-gray-50 border-y border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-4xl font-black mb-4">Filosofi <span class="text-barbarGreen">Empat Pilar</span></h2>
+                <p class="text-gray-500 text-lg">Setiap orang punya potensi beda-beda. Ini yang bikin kita kuat.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-8 rounded-3xl bg-white border-t-4 border-barbarRed shadow-sm hover:shadow-lg transition-all transform hover:-translate-y-2">
+                    <div class="w-12 h-12 bg-red-100 text-barbarRed rounded-2xl mb-6 flex items-center justify-center font-bold text-xl">🔥</div>
+                    <h3 class="font-heading text-xl font-bold mb-2">Passion</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Semangat membara buat terus ngulik hal baru tanpa batas dan nggak takut error.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-white border-t-4 border-barbarYellow shadow-sm hover:shadow-lg transition-all transform hover:-translate-y-2">
+                    <div class="w-12 h-12 bg-yellow-100 text-yellow-600 rounded-2xl mb-6 flex items-center justify-center font-bold text-xl">💡</div>
+                    <h3 class="font-heading text-xl font-bold mb-2">Creativity</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Melahirkan ide out-of-the-box buat nyelesain masalah yang rumit.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-white border-t-4 border-barbarGreen shadow-sm hover:shadow-lg transition-all transform hover:-translate-y-2">
+                    <div class="w-12 h-12 bg-green-100 text-barbarGreen rounded-2xl mb-6 flex items-center justify-center font-bold text-xl">🌱</div>
+                    <h3 class="font-heading text-xl font-bold mb-2">Growth</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Proses tumbuh kembang bersama dari titik nol sampai jadi sesuatu yang bermanfaat.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-white border-t-4 border-barbarBlue shadow-sm hover:shadow-lg transition-all transform hover:-translate-y-2">
+                    <div class="w-12 h-12 bg-blue-100 text-barbarBlue rounded-2xl mb-6 flex items-center justify-center font-bold text-xl">🚀</div>
+                    <h3 class="font-heading text-xl font-bold mb-2">Skill</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Keahlian teknis yang bakal jadi senjata utama lu tempur di dunia digital.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-darkBg text-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="font-heading text-4xl font-black mb-4">Connect With <span class="text-barbarBlue">Cece</span></h2>
+            <p class="text-gray-400 mb-12">Punya pertanyaan seputar koding? Sapa gwe di sini.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <a href="#" class="p-10 bg-gray-800/50 rounded-3xl border border-gray-700 hover:border-barbarBlue transition-all group backdrop-blur-sm">
+                    <div class="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">📱</div>
+                    <h3 class="font-heading text-2xl font-bold text-white">TikTok</h3>
+                    <p class="text-gray-400 mt-2 text-sm">Update konten tech harian & bedah AI.</p>
+                </a>
+                <a href="#" class="p-10 bg-gray-800/50 rounded-3xl border border-gray-700 hover:border-barbarRed transition-all group backdrop-blur-sm">
+                    <div class="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">📸</div>
+                    <h3 class="font-heading text-2xl font-bold text-white">Instagram</h3>
+                    <p class="text-gray-400 mt-2 text-sm">Dibalik layar proses belajar & insight teknologi.</p>
+                </a>
+                <a href="#" class="p-10 bg-gray-800/50 rounded-3xl border border-gray-700 hover:border-barbarGreen transition-all group backdrop-blur-sm">
+                    <div class="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">💬</div>
+                    <h3 class="font-heading text-2xl font-bold text-white">WhatsApp</h3>
+                    <p class="text-gray-400 mt-2 text-sm">Konsultasi langsung & info jadwal kelas.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-sm text-gray-500 font-medium">
+                © 2026 Belajar Bareng Cece. Semua Hak Dilindungi.
+            </div>
+            <div class="flex items-center gap-2 font-heading tracking-wide">
+                <span class="text-barbarBlue font-black text-lg">Cece Aditya</span>
+                <span class="text-gray-300">|</span>
+                <span class="text-barbarGreen font-bold">CEO of BARBARCC</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

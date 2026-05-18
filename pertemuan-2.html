@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 2: Tulang Web (HTML) | BARBARCC</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif']
+                    },
+                    colors: {
+                        barbarRed: '#ef4444',
+                        barbarYellow: '#facc15',
+                        barbarGreen: '#22c55e',
+                        barbarBlue: '#3b82f6',
+                        darkBg: '#0f172a'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans selection:bg-barbarYellow selection:text-gray-900">
+
+    <nav class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100 transition-all">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="index.html" class="flex items-center gap-2 group cursor-pointer">
+                    <div class="flex gap-1 group-hover:scale-110 transition-transform">
+                        <span class="w-3 h-3 rounded-full bg-barbarRed"></span>
+                        <span class="w-3 h-3 rounded-full bg-barbarYellow"></span>
+                        <span class="w-3 h-3 rounded-full bg-barbarGreen"></span>
+                        <span class="w-3 h-3 rounded-full bg-barbarBlue"></span>
+                    </div>
+                    <span class="text-2xl font-heading font-black tracking-tighter ml-2">BARBAR<span class="text-barbarBlue">CC</span></span>
+                </a>
+                <div class="hidden md:flex space-x-8 font-bold text-gray-500 text-sm tracking-wide uppercase">
+                    <a href="index.html" class="hover:text-gray-900 pb-1 transition-all">Beranda</a>
+                    <a href="modul.html" class="text-barbarBlue border-b-2 border-barbarBlue pb-1">Modul Kelas</a>
+                    <a href="showcase.html" class="hover:text-gray-900 pb-1 transition-all">Showcase</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-white py-16 border-b border-gray-100 relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-64 bg-barbarYellow/10 blur-3xl rounded-full -z-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <span class="bg-yellow-100 text-yellow-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Pertemuan 2</span>
+            <h1 class="font-heading text-4xl md:text-5xl font-black mt-4 text-gray-900">Membangun Tulang Web <span class="text-barbarYellow">(HTML)</span></h1>
+            <p class="text-gray-500 mt-2 text-lg font-medium">Pahami tag-tag dasar HTML sebagai fondasi sebelum kita mulai ngecat pakai CSS minggu depan.</p>
+        </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row gap-10">
+        
+        <aside class="w-full md:w-1/4">
+            <div class="sticky top-28 bg-white p-6 rounded-3xl border border-gray-100 shadow-sm">
+                <h3 class="font-heading font-bold text-lg mb-4 text-gray-800">Daftar Isi</h3>
+                <ul class="space-y-3 text-gray-600 font-medium text-sm">
+                    <li><a href="#pengantar" class="hover:text-yellow-600 transition-colors block py-1">1. Pengantar HTML</a></li>
+                    <li><a href="#kamus" class="hover:text-yellow-600 transition-colors block py-1">2. Kamus Tag Sakti 🪄</a></li>
+                    <li><a href="#video" class="hover:text-yellow-600 transition-colors block py-1">3. Video Bedah Kode</a></li>
+                    <li><a href="#kodingan" class="hover:text-yellow-600 transition-colors block py-1">4. Kertas Contekan</a></li>
+                    <li><a href="#download" class="hover:text-yellow-600 transition-colors block py-1">5. Link Google Drive</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="w-full md:w-3/4">
+            
+            <section id="pengantar" class="mb-16 scroll-mt-28 bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
+                <h2 class="font-heading text-2xl font-black mb-4 border-b pb-2 text-gray-900">1. Kenalan Sama Tulang Web</h2>
+                <div class="flex flex-col lg:flex-row gap-8 items-center mb-6">
+                    <div class="flex-1">
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            <b>HTML (Hypertext Markup Language)</b> itu bukan bahasa pemrograman, Coy! Dia itu bahasa <i>Markup</i> alias kerangka dasar dari semua website di dunia. 
+                        </p>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Ibarat membangun rumah, HTML adalah batu bata dan tiang betonnya. Kita nyusun teks, masukin gambar, dan bikin tombol itu semua pakai HTML.
+                        </p>
+                    </div>
+                    <div class="w-full lg:w-1/2 rounded-2xl overflow-hidden shadow-md">
+                        <img src="assets/HTMLcc.png" alt="Wireframe Website" class="w-full h-48 object-cover transform hover:scale-105 transition duration-500">
+                    </div>
+                </div>
+
+                <div class="bg-yellow-50 border-l-4 border-barbarYellow p-5 rounded-r-xl">
+                    <p class="text-sm text-yellow-800 font-semibold flex items-start gap-2">
+                        <span class="text-lg">💡</span>
+                        <span><b>Tips Cece:</b> Jangan lupa tutup tag lu! Anatomi tag yang bener itu ada pembuka dan penutup. Kalau buka pakai <code>&lt;h1&gt;</code>, wajib diakhiri pakai <code>&lt;/h1&gt;</code>. Kalau nggak, web lu bisa berantakan!</span>
+                    </p>
+                </div>
+            </section>
+
+            <section id="kamus" class="mb-16 scroll-mt-28 bg-darkBg p-8 rounded-3xl shadow-xl">
+                <h2 class="font-heading text-2xl font-black mb-2 text-barbarYellow">2. Kamus Tag Sakti 🪄</h2>
+                <p class="text-gray-400 text-sm mb-8">Hafalin 4 tag ini, dan lu udah bisa bikin artikel web sederhana:</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-gray-800/80 p-5 rounded-2xl border border-gray-700">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="font-mono text-barbarYellow font-bold bg-gray-900 px-2 py-1 rounded">&lt;h1&gt;</span>
+                            <span class="text-xs text-gray-400 uppercase tracking-wider">Heading</span>
+                        </div>
+                        <p class="text-white font-bold text-lg mb-1">Judul Utama</p>
+                        <p class="text-gray-400 text-sm">Bikin teks lu gede banget. Ada <code>h1</code> (paling gede) sampai <code>h6</code> (paling kecil).</p>
+                    </div>
+                    
+                    <div class="bg-gray-800/80 p-5 rounded-2xl border border-gray-700">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="font-mono text-barbarGreen font-bold bg-gray-900 px-2 py-1 rounded">&lt;p&gt;</span>
+                            <span class="text-xs text-gray-400 uppercase tracking-wider">Paragraph</span>
+                        </div>
+                        <p class="text-white font-bold text-lg mb-1">Teks Biasa</p>
+                        <p class="text-gray-400 text-sm">Dipakai buat nulis deskripsi, artikel, atau curhatan panjang lu.</p>
+                    </div>
+
+                    <div class="bg-gray-800/80 p-5 rounded-2xl border border-gray-700">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="font-mono text-barbarBlue font-bold bg-gray-900 px-2 py-1 rounded">&lt;a&gt;</span>
+                            <span class="text-xs text-gray-400 uppercase tracking-wider">Anchor</span>
+                        </div>
+                        <p class="text-white font-bold text-lg mb-1">Pintu Kemana Saja</p>
+                        <p class="text-gray-400 text-sm">Buat bikin link yang bisa diklik. Butuh atribut <code>href="link-tujuan"</code> biar jalan.</p>
+                    </div>
+
+                    <div class="bg-gray-800/80 p-5 rounded-2xl border border-gray-700">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="font-mono text-barbarRed font-bold bg-gray-900 px-2 py-1 rounded">&lt;img&gt;</span>
+                            <span class="text-xs text-gray-400 uppercase tracking-wider">Image</span>
+                        </div>
+                        <p class="text-white font-bold text-lg mb-1">Tukang Foto</p>
+                        <p class="text-gray-400 text-sm">Nampilin gambar. Tag ini <b>jomblo</b> (nggak butuh penutup). Butuh atribut <code>src="nama-foto"</code>.</p>
+                    </div>
+                </div>
+            </section>
+                
+                <section id="video" class="mb-16 scroll-mt-28 bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
+                <h2 class="font-heading text-2xl font-black mb-4 border-b pb-2 text-gray-900">3. Video Bedah Kode</h2>
+                <p class="text-gray-600 mb-6">Karena aturan dari YouTube, video ini harus diputar langsung di tab baru. Klik tombol di bawah buat nonton bedah kodenya!</p>
+                
+                <a href="https://youtu.be/FQdaUv95mR8" target="_blank" class="relative block w-full aspect-video bg-gray-900 rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
+                    <img src="assets/HtmlCece.jpeg" alt="Thumbnail Video" class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-300">
+                    
+                    <div class="absolute inset-0 flex flex-col items-center justify-center">
+                        <div class="w-20 h-20 bg-barbarRed/90 group-hover:bg-barbarRed rounded-full flex items-center justify-center mb-4 transform group-hover:scale-110 transition-all shadow-2xl backdrop-blur-sm border-4 border-white/20">
+                            <svg class="w-10 h-10 text-white ml-2" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <span class="text-white font-bold font-heading text-xl tracking-wide bg-black/50 px-4 py-1 rounded-full backdrop-blur-sm group-hover:-translate-y-2 transition-transform">
+                            Tonton di YouTube
+                        </span>
+                    </div>
+                </a>
+            </section>
+
+            <section id="kodingan" class="mb-16 scroll-mt-28 bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
+                <h2 class="font-heading text-2xl font-black mb-4 border-b pb-2 text-gray-900">4. Kertas Contekan HTML</h2>
+                <p class="text-gray-600 mb-6">Ini kodingan lengkap web biodata pertama kita. Tinggal pencet Copy, lalu Paste di VS Code lu buat dipelajarin.</p>
+                
+                <div class="relative bg-[#1e1e1e] rounded-2xl p-6 shadow-xl overflow-x-auto border border-gray-800">
+                    <div class="flex justify-between items-center mb-4 border-b border-gray-700 pb-2">
+                        <div class="flex gap-2">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        </div>
+                        <button onclick="salinKode('kode-html', 'btn-copy')" id="btn-copy" class="bg-gray-700 hover:bg-gray-600 text-white text-xs font-bold py-1.5 px-4 rounded-lg transition-colors flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                            Copy Code
+                        </button>
+                    </div>
+                    
+                    <pre><code id="kode-html" class="text-gray-300 font-mono text-sm leading-loose">
+<span class="text-gray-500">&lt;!DOCTYPE html&gt;</span>
+<span class="text-blue-400">&lt;html</span> <span class="text-yellow-300">lang</span>=<span class="text-green-400">"id"</span><span class="text-blue-400">&gt;</span>
+<span class="text-blue-400">&lt;head&gt;</span>
+    <span class="text-blue-400">&lt;title&gt;</span>Biodata BARBARCC<span class="text-blue-400">&lt;/title&gt;</span>
+<span class="text-blue-400">&lt;/head&gt;</span>
+<span class="text-blue-400">&lt;body&gt;</span>
+    <span class="text-blue-400">&lt;h1&gt;</span>Halo, Gwe Calon Programmer!<span class="text-blue-400">&lt;/h1&gt;</span>
+    <span class="text-blue-400">&lt;p&gt;</span>Ini web pertama gwe di kelas BARBARCC.<span class="text-blue-400">&lt;/p&gt;</span>
+    
+    <span class="text-gray-500">&lt;!-- Atribut src itu sumber fotonya --&gt;</span>
+    <span class="text-blue-400">&lt;img</span> <span class="text-yellow-300">src</span>=<span class="text-green-400">"link-foto-lu.jpg"</span> <span class="text-yellow-300">width</span>=<span class="text-green-400">"200"</span><span class="text-blue-400">&gt;</span>
+    
+    <span class="text-blue-400">&lt;ul&gt;</span>
+        <span class="text-blue-400">&lt;li&gt;</span>Belajar HTML<span class="text-blue-400">&lt;/li&gt;</span>
+        <span class="text-blue-400">&lt;li&gt;</span>Bantai Error<span class="text-blue-400">&lt;/li&gt;</span>
+    <span class="text-blue-400">&lt;/ul&gt;</span>
+<span class="text-blue-400">&lt;/body&gt;</span>
+<span class="text-blue-400">&lt;/html&gt;</span>
+                    </code></pre>
+                </div>
+            </section>
+
+            <section id="download" class="mb-16 scroll-mt-28 bg-white p-8 rounded-3xl border border-gray-100 shadow-sm overflow-hidden relative">
+                <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-barbarYellow/20 blur-2xl rounded-full pointer-events-none"></div>
+                
+                <div class="relative z-10">
+                    <h2 class="font-heading text-2xl font-black mb-4 border-b pb-2 text-gray-900">5. Akses Modul Lengkap (Google Drive)</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Klik tombol di bawah buat meluncur ke folder Google Drive. Di sana lu bisa download PDF presentasi materi Pertemuan 2 biar lu makin jago nulis tag HTML.</p>
+                    
+                    <a href="https://drive.google.com/drive/folders/15lDt0bcj2u6Ko_SGVfJyEzGfItO9A9CV" target="_blank" class="inline-flex items-center gap-3 bg-gray-900 hover:bg-black text-white font-bold py-4 px-8 rounded-2xl shadow-lg transition-all transform hover:-translate-y-1">
+                        <svg class="w-6 h-6 text-barbarYellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        </svg>
+                        Buka Folder Modul 2 📂
+                    </a>
+                </div>
+            </section>
+<div class="mt-12 pt-8 border-t border-gray-100 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <a href="modul.html" class="inline-flex w-full sm:w-auto items-center justify-center gap-2 px-6 py-4 bg-white border-2 border-gray-200 text-gray-700 font-bold rounded-2xl hover:border-gray-900 hover:text-gray-900 transition-all group">
+                    <span class="transform group-hover:-translate-x-1 transition-transform">&larr;</span>
+                    Kembali ke Modul
+                </a>
+                
+                <a href="pertemuan-3.html" class="inline-flex w-full sm:w-auto items-center justify-center gap-2 px-6 py-4 bg-gray-900 text-white font-bold rounded-2xl hover:bg-black transition-all group shadow-xl">
+                    Lanjut Materi 3
+                    <span class="transform group-hover:translate-x-1 transition-transform">&rarr;</span>
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <footer class="py-10 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-sm text-gray-500 font-medium">
+                © 2026 Belajar Bareng Cece. Semua Hak Dilindungi.
+            </div>
+            <div class="flex items-center gap-2 font-heading tracking-wide">
+                <span class="text-barbarBlue font-black text-lg">Cece Aditya</span>
+                <span class="text-gray-300">|</span>
+                <span class="text-barbarGreen font-bold">CEO of BARBARCC</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function salinKode(idElemen, idTombol) {
+            const teksKode = document.getElementById(idElemen).innerText;
+            const tombol = document.getElementById(idTombol);
+            
+            navigator.clipboard.writeText(teksKode).then(function() {
+                const teksAsli = tombol.innerHTML;
+                tombol.innerHTML = 'Copied! ✅';
+                tombol.classList.replace('bg-gray-700', 'bg-barbarGreen');
+                tombol.classList.replace('hover:bg-gray-600', 'hover:bg-green-600');
+                
+                setTimeout(function() {
+                    tombol.innerHTML = teksAsli;
+                    tombol.classList.replace('bg-barbarGreen', 'bg-gray-700');
+                    tombol.classList.replace('hover:bg-green-600', 'hover:bg-gray-600');
+                }, 2000);
+            }).catch(function(err) {
+                alert('Gagal copy kode, Coy! Diblokir browser kayaknya.');
+            });
+        }
+    </script>
+</body>
+</html>

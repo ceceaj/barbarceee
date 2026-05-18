@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wall of Fame | BARBARCC</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif']
+                    },
+                    colors: {
+                        barbarRed: '#ef4444',
+                        barbarYellow: '#facc15',
+                        barbarGreen: '#22c55e',
+                        barbarBlue: '#3b82f6',
+                        darkBg: '#0f172a'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans selection:bg-barbarBlue selection:text-white">
+
+    <nav class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100 transition-all">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="index.html" class="flex items-center gap-2 group cursor-pointer">
+                    <div class="flex gap-1 group-hover:scale-110 transition-transform">
+                        <span class="w-3 h-3 rounded-full bg-barbarRed"></span>
+                        <span class="w-3 h-3 rounded-full bg-barbarYellow"></span>
+                        <span class="w-3 h-3 rounded-full bg-barbarGreen"></span>
+                        <span class="w-3 h-3 rounded-full bg-barbarBlue"></span>
+                    </div>
+                    <span class="text-2xl font-heading font-black tracking-tighter ml-2">BARBAR<span class="text-barbarBlue">CC</span></span>
+                </a>
+                <div class="hidden md:flex space-x-8 font-bold text-gray-500 text-sm tracking-wide uppercase">
+                    <a href="index.html" class="hover:text-gray-900 hover:border-b-2 hover:border-gray-200 pb-1 transition-all">Beranda</a>
+                    <a href="modul.html" class="hover:text-gray-900 hover:border-b-2 hover:border-gray-200 pb-1 transition-all">Modul Kelas</a>
+                    <a href="showcase.html" class="text-barbarBlue border-b-2 border-barbarBlue pb-1">Showcase</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-white py-20 border-b border-gray-100 text-center">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="inline-block mb-4 px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-bold border border-yellow-200">
+                🚧 Segera Hadir 🚧
+            </div>
+            <h1 class="font-heading text-5xl md:text-6xl font-black mb-6 text-gray-900">Wall of <span class="text-barbarYellow">Fame</span> 🏆</h1>
+            <p class="text-xl text-gray-500 font-medium">
+                Panggung kehormatan buat karya-karya terbaik dari tongkrongan BARBARCC.
+            </p>
+        </div>
+    </header>
+
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-6">
+            
+            <div class="bg-white border-2 border-dashed border-gray-300 rounded-3xl p-16 text-center shadow-sm mb-16">
+                <div class="text-6xl mb-6 grayscale opacity-50">🖼️</div>
+                <h2 class="font-heading text-3xl font-bold text-gray-400 mb-4">Ruangan Ini Masih Kosong!</h2>
+                <p class="text-gray-500 text-lg max-w-lg mx-auto">
+                    Belum ada karya yang dipajang. Posisi ini sengaja dikosongin buat nungguin hasil Project Mandiri lu semua mengudara di internet.
+                </p>
+            </div>
+
+            <div class="bg-darkBg rounded-3xl p-10 text-white shadow-2xl relative overflow-hidden">
+                <div class="absolute -top-20 -right-20 w-64 h-64 bg-barbarBlue opacity-20 blur-3xl rounded-full"></div>
+                
+                <h2 class="font-heading text-3xl font-black mb-2 relative z-10">Gimana Cara Masuk Sini?</h2>
+                <p class="text-gray-400 mb-8 relative z-10">Selesaikan misi lu, dan pajang nama lu di Wall of Fame.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
+                    <div class="bg-gray-800/50 p-6 rounded-2xl border border-gray-700 backdrop-blur-sm">
+                        <div class="w-10 h-10 bg-barbarRed rounded-full flex items-center justify-center font-bold text-xl mb-4">1</div>
+                        <h3 class="font-bold text-lg mb-2">Bikin Web Lu</h3>
+                        <p class="text-sm text-gray-400">Buat web portofolio, biodata, atau hobi sekreatif mungkin pakai HTML & CSS.</p>
+                    </div>
+                    <div class="bg-gray-800/50 p-6 rounded-2xl border border-gray-700 backdrop-blur-sm">
+                        <div class="w-10 h-10 bg-barbarYellow text-gray-900 rounded-full flex items-center justify-center font-bold text-xl mb-4">2</div>
+                        <h3 class="font-bold text-lg mb-2">Deploy ke Vercel</h3>
+                        <p class="text-sm text-gray-400">Online-kan kodingan lu pakai Vercel biar dapet link URL beneran.</p>
+                    </div>
+                    <div class="bg-gray-800/50 p-6 rounded-2xl border border-gray-700 backdrop-blur-sm">
+                        <div class="w-10 h-10 bg-barbarGreen rounded-full flex items-center justify-center font-bold text-xl mb-4">3</div>
+                        <h3 class="font-bold text-lg mb-2">Kirim ke Cece</h3>
+                        <p class="text-sm text-gray-400">Kirim link Vercel lu ke grup WA. Karya ter-GACOR bakal langsung gwe pajang di sini!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="py-10 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-sm text-gray-500 font-medium">
+                © 2026 Belajar Bareng Cece. Semua Hak Dilindungi.
+            </div>
+            <div class="flex items-center gap-2 font-heading tracking-wide">
+                <span class="text-barbarBlue font-black text-lg">Cece Aditya</span>
+                <span class="text-gray-300">|</span>
+                <span class="text-barbarGreen font-bold">CEO of BARBARCC</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
